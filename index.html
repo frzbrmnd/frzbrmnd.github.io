@@ -34,7 +34,7 @@
   let marker = new maptalks.Marker([51.67, 32.625,500], {
     'id' : 'marker0',
     'symbol' : {
-        'markerFile'  : './icon/3dmanwithshadow.png',
+        'markerFile'  : './man.png',
         'markerWidth' : 100,
         'markerHeight': 150,
     },
@@ -53,7 +53,6 @@
     }
 
     function showPosition(position){
-        //alert("lat= " + position.coords.latitude + "\nlong= " + position.coords.longitude + "\nheading=" + position.coords.heading);
         console.log("current loc is: ");
         marker.setCoordinates([position.coords.longitude, position.coords.latitude]);
    
